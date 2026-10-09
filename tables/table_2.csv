@@ -1,0 +1,18 @@
+parameter,configured_value,unit,evidence_class,model_role
+natural consumption quantum,150,g uncooked rice,empirically anchored,reference lattice unit
+annual consumption,32.0–213.6,kg/scenario-year,empirically anchored,scenario event-rate calibration
+household composition weights,0.15475–0.1905,scenario weight,scenario assumption,design-scenario aggregation
+freshness threshold,30,days,empirically anchored,start of aging and spoilage exposure
+usage-event size probabilities,six discrete distributions,probability,unidentified,lattice demand process
+event interarrival distribution,Gamma shape 4,distribution,scenario assumption,stochastic timing
+adaptation behavior,probability 0.30–0.55; ratio 0.70–0.75,probability and fraction,unidentified,final-batch adjustment and backlog
+spoilage hazard,0.003,per day after threshold,unidentified,inventory exit
+purchase-event cost,120,JPY/event,scenario assumption,shopping and ordering burden
+packaging mass function,8 + 9 P^(2/3),g/package,scenario assumption,package-material intensity
+packaging material cost,350,JPY/kg packaging,unidentified,packaging cost
+storage cost,0.08,JPY/kg-day,unidentified,inventory carrying cost
+freshness cost,0.6,JPY/kg-day beyond threshold,unidentified,quality loss
+handling cost,4,JPY/purchase-kg²,unidentified,large-package inconvenience
+size discount,0.025,fraction per log kg,scenario assumption,price–size relationship
+unmet-demand penalty,1700,JPY/kg,scenario assumption,service-loss penalty
+SKU complexity,180,JPY/household-year/additional SKU,unidentified,assortment and production complexity

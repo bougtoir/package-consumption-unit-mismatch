@@ -1,0 +1,11 @@
+sku_count,portfolio,maximum_regret_jpy,mean_regret_jpy,baseline_regret_jpy,regime_of_maximum
+2,5|10,429.1,93.1,0.0,high_sku_complexity
+2,4.5|10,454.3,118.2,25.2,high_sku_complexity
+1,9,522.0,269.6,290.9,consumer_inconvenience_dominant
+2,5|9,535.6,205.0,106.5,high_sku_complexity
+2,4.5|9,560.8,224.2,131.7,high_sku_complexity
+2,3|10,662.7,286.8,233.6,high_sku_complexity
+2,3|9,688.7,337.7,259.6,high_sku_complexity
+2,2.4|10,746.9,362.7,317.7,high_sku_complexity
+2,9|10,756.7,348.4,327.6,high_sku_complexity
+2,2.4|9,772.8,406.3,343.7,high_sku_complexity

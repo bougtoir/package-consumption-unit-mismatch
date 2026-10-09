@@ -1,0 +1,25 @@
+value_id,value,unit,analysis_source,input_source,code_source,manuscript_location
+max_terminal_residual_g,393.8875,g,output/terminal_residual.csv,config/default.yaml,src/pcum/model.py:terminal_residual_distribution,Results 3.1
+no_spoilage_max_discard_kg,0.0,kg/household-year,output/size_household_metrics.csv,config/default.yaml,src/pcum/model.py:simulate_package,Results 3.2
+baseline_max_discard_kg,2.7793588643144553,kg/household-year,output/size_household_metrics.csv,config/default.yaml,src/pcum/model.py:simulate_package,Results 3.2
+best_single_portfolio,9,kg package,output/portfolio_results.csv,config/default.yaml,src/pcum/model.py:evaluate_portfolios,Results 3.3
+best_two_portfolio,5|10,kg packages,output/portfolio_results.csv,config/default.yaml,src/pcum/model.py:evaluate_portfolios,Results 3.3
+best_three_portfolio,5|9|10,kg packages,output/portfolio_results.csv,config/default.yaml,src/pcum/model.py:evaluate_portfolios,Results 3.3
+two_vs_one_saving_jpy,290.8827453579288,JPY/household-year,output/portfolio_results.csv,config/default.yaml,src/pcum/model.py:evaluate_portfolios,Results 3.3
+current_portfolio_regret_jpy,180.0,JPY/household-year,output/portfolio_results.csv,config/default.yaml,src/pcum/model.py:evaluate_portfolios,Results 3.3
+high_sigma_safety_margin_g,61.804646123356264,g,output/manufacturing_precision.csv,analysis/run_analysis.py,src/pcum/model.py:manufacturing_safety_margin,Results 3.4
+one_to_two_sku_threshold_jpy,470.8827453579288,JPY/household-year per added SKU,output/sku_inclusion_thresholds.csv,output/size_household_metrics.csv,src/pcum/model.py:sku_inclusion_thresholds,Results 3.6
+two_to_three_sku_threshold_jpy,36.762714283016976,JPY/household-year per added SKU,output/sku_inclusion_thresholds.csv,output/size_household_metrics.csv,src/pcum/model.py:sku_inclusion_thresholds,Results 3.6
+phase_one_sku_share,0.3888,fraction of phase-map cells,output/sku_phase_map.csv,config/default.yaml,analysis/run_revision_analyses.py:run_dense_phase_map,Results 3.7
+phase_two_sku_share,0.4992,fraction of phase-map cells,output/sku_phase_map.csv,config/default.yaml,analysis/run_revision_analyses.py:run_dense_phase_map,Results 3.7
+phase_three_sku_share,0.112,fraction of phase-map cells,output/sku_phase_map.csv,config/default.yaml,analysis/run_revision_analyses.py:run_dense_phase_map,Results 3.7
+phase_modal_portfolio_share,0.3296,fraction of phase-map cells,output/sku_phase_map.csv,config/default.yaml,analysis/run_revision_analyses.py:run_dense_phase_map,Results 3.7
+two_vs_one_ci_low_jpy,287.55380809705144,JPY/household-year,output/portfolio_contrasts.csv,output/portfolio_replications.csv.gz,analysis/run_analysis.py:portfolio_contrasts,Results 3.5
+two_vs_one_ci_high_jpy,294.2116826188242,JPY/household-year,output/portfolio_contrasts.csv,output/portfolio_replications.csv.gz,analysis/run_analysis.py:portfolio_contrasts,Results 3.5
+minimax_portfolio,5|10,kg packages,output/robust_portfolios.csv,output/portfolio_results.csv,analysis/run_analysis.py:run_portfolios,Results 3.9
+minimax_max_regret_jpy,429.1172546420712,JPY/household-year,output/robust_portfolios.csv,output/portfolio_results.csv,analysis/run_analysis.py:run_portfolios,Results 3.9
+low_consumption_best_single,5,kg package,output/continuous_consumption_summary.csv,config/default.yaml,analysis/run_revision_analyses.py:run_consumption_sensitivity,Results 3.4
+high_consumption_best_single,10,kg package,output/continuous_consumption_summary.csv,config/default.yaml,analysis/run_revision_analyses.py:run_consumption_sensitivity,Results 3.4
+dense_grid_best_single,9,kg package,output/candidate_grid_robustness.csv,config/default.yaml,analysis/run_revision_analyses.py:run_candidate_grid_robustness,Results 3.8
+dense_grid_best_two,5.25|10,kg packages,output/candidate_grid_robustness.csv,config/default.yaml,analysis/run_revision_analyses.py:run_candidate_grid_robustness,Results 3.8
+dense_grid_best_three,5.25|8|10,kg packages,output/candidate_grid_robustness.csv,config/default.yaml,analysis/run_revision_analyses.py:run_candidate_grid_robustness,Results 3.8
