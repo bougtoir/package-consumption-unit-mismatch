@@ -1,0 +1,132 @@
+project:
+  seed: 20260924
+  horizon_years: 3
+  burn_in_years: 1
+  replications: 192
+  workers: 4
+  days_per_year: 365.25
+  confidence_level: 0.95
+  relative_mcse_threshold: 0.02
+  absolute_mcse_threshold:
+    generalized_cost_jpy: 50.0
+    physical_discard_kg: 0.01
+    packaging_mass_kg: 0.005
+    mean_age_at_consumption_days: 0.25
+
+rice:
+  natural_quantum_g: 150
+  candidate_package_kg: [1.8, 2.0, 2.1, 2.25, 2.4, 3.0, 4.5, 5.0, 9.0, 10.0]
+  benchmark_market_portfolio_kg: [2.0, 5.0, 10.0]
+  value_jpy_per_kg: 850.0
+  reference_package_kg: 2.0
+
+households:
+  - name: single_low
+    scenario_weight: 0.1905
+    annual_consumption_kg: 32.0
+    usage_g: [150, 225, 300]
+    usage_probability: [0.50, 0.25, 0.25]
+    adaptation_probability: 0.55
+    adaptation_min_ratio: 0.70
+    freshness_threshold_days: 30.0
+    handling_threshold_kg: 4.0
+  - name: single_average
+    scenario_weight: 0.1905
+    annual_consumption_kg: 53.4
+    usage_g: [150, 225, 300]
+    usage_probability: [0.35, 0.30, 0.35]
+    adaptation_probability: 0.50
+    adaptation_min_ratio: 0.70
+    freshness_threshold_days: 30.0
+    handling_threshold_kg: 4.0
+  - name: two_person_low
+    scenario_weight: 0.15475
+    annual_consumption_kg: 74.8
+    usage_g: [225, 300, 375, 450]
+    usage_probability: [0.25, 0.40, 0.20, 0.15]
+    adaptation_probability: 0.45
+    adaptation_min_ratio: 0.70
+    freshness_threshold_days: 30.0
+    handling_threshold_kg: 6.0
+  - name: two_person_average
+    scenario_weight: 0.15475
+    annual_consumption_kg: 106.8
+    usage_g: [225, 300, 375, 450]
+    usage_probability: [0.10, 0.35, 0.20, 0.35]
+    adaptation_probability: 0.45
+    adaptation_min_ratio: 0.70
+    freshness_threshold_days: 30.0
+    handling_threshold_kg: 6.0
+  - name: family_three
+    scenario_weight: 0.15475
+    annual_consumption_kg: 160.2
+    usage_g: [300, 450, 600, 750]
+    usage_probability: [0.10, 0.35, 0.35, 0.20]
+    adaptation_probability: 0.35
+    adaptation_min_ratio: 0.75
+    freshness_threshold_days: 30.0
+    handling_threshold_kg: 8.0
+  - name: family_four
+    scenario_weight: 0.15475
+    annual_consumption_kg: 213.6
+    usage_g: [450, 600, 750, 900]
+    usage_probability: [0.10, 0.30, 0.35, 0.25]
+    adaptation_probability: 0.30
+    adaptation_min_ratio: 0.75
+    freshness_threshold_days: 30.0
+    handling_threshold_kg: 8.0
+
+costs:
+  purchase_event_jpy: 120.0
+  packaging_fixed_g: 8.0
+  packaging_surface_g_per_kg_two_thirds: 9.0
+  packaging_material_jpy_per_kg: 350.0
+  storage_jpy_per_kg_day: 0.08
+  freshness_jpy_per_kg_day: 0.60
+  handling_jpy_per_purchase_kg_squared: 4.0
+  adaptation_jpy_per_event: 10.0
+  unmet_demand_jpy_per_kg: 1700.0
+  size_discount_fraction_per_log_kg: 0.025
+  spoilage_hazard_per_day_after_threshold: 0.003
+  sku_complexity_jpy_per_household_year: 180.0
+
+regimes:
+  - name: baseline
+  - name: full_carry_no_spoilage
+    spoilage_hazard_multiplier: 0.0
+  - name: perfect_final_batch_adaptation
+    adaptation_probability: 1.0
+    adaptation_min_ratio: 0.0
+  - name: zero_sku_complexity
+    sku_complexity_multiplier: 0.0
+  - name: high_sku_complexity
+    sku_complexity_multiplier: 5.0
+  - name: packaging_logistics_dominant
+    packaging_cost_multiplier: 5.0
+    purchase_event_cost_multiplier: 3.0
+  - name: consumer_inconvenience_dominant
+    adaptation_cost_multiplier: 8.0
+    handling_cost_multiplier: 3.0
+  - name: no_discrete_consumption_quantum
+    usage_distribution: lognormal
+  - name: randomized_non_lattice_usage
+    usage_distribution: gamma
+  - name: continuous_no_spoilage
+    usage_distribution: lognormal
+    spoilage_hazard_multiplier: 0.0
+
+sensitivity:
+  replications: 64
+  dense_candidate_package_kg:
+    [1.5, 1.75, 1.8, 2.0, 2.1, 2.25, 2.4, 2.5, 2.75, 3.0, 3.25,
+     3.5, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0, 5.25, 5.5, 5.75, 6.0,
+     6.25, 6.5, 6.75, 7.0, 7.25, 7.5, 7.75, 8.0, 8.25, 8.5, 8.75,
+     9.0, 9.25, 9.5, 9.75, 10.0]
+  spoilage_hazard_multipliers: [0.0, 0.5, 1.0, 2.0, 4.0]
+  purchase_event_cost_multipliers: [0.25, 0.5, 1.0, 2.0, 4.0]
+  sku_complexity_jpy_per_household_year:
+    [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300,
+     325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 575, 600]
+  annual_consumption_multipliers:
+    [0.50, 0.60, 0.70, 0.80, 0.90, 1.00, 1.10, 1.20, 1.30, 1.40,
+     1.50]

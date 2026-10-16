@@ -1,0 +1,7 @@
+data/raw/*
+!data/raw/literature/
+data/raw/literature/*
+!data/raw/literature/crossref_*.json
+submission/pcum_private_reproducibility_bundle.zip
+submission/pcum_private_reproducibility_bundle_manifest.csv
+release/pcum_reproducibility_FINAL.zip
