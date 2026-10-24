@@ -1,0 +1,10 @@
+Concept,Symbol,Operational definition
+Nominal package quantity,P,Labelled or target package content
+Purchase at event t,Qₜ,Packaged quantity entering usable inventory
+Demand at event t,Dₜ,Quantity requested at a stochastic usage event
+Consumption at event t,Cₜ,Quantity served from usable inventory
+Inventory after event t,Iₜ,Quantity retained and carried forward
+Backlog after event t,Bₜ,Demand not yet served
+Inventory exit at event t,Eₜ,"Spoilage, expiry, forced removal, or disposal"
+Terminal residual,R,Diagnostic remainder retained as inventory
+Generalized cost,J,"Monetary product, purchase, packaging, storage, freshness, handling, adaptation, and variety costs"

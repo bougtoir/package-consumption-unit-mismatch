@@ -1,0 +1,11 @@
+regime,greedy_1,greedy_2,greedy_3,optimal_1,optimal_2,optimal_3,greedy_regret_at_2_jpy,greedy_regret_at_3_jpy,nested_at_2
+baseline,9,5|9,5|9|10,9,5|10,5|9|10,106.504623,0.0,False
+consumer_inconvenience_dominant,9,5|9,4.5|5|9,9,5|9,4.5|5|9,0.0,0.0,True
+continuous_no_spoilage,10,9|10,5|9|10,10,9|10,5|9|10,0.0,0.0,True
+full_carry_no_spoilage,10,9|10,5|9|10,10,9|10,5|9|10,0.0,0.0,True
+high_sku_complexity,9,5|9,5|9|10,9,5|10,5|9|10,106.504623,0.0,False
+no_discrete_consumption_quantum,9,5|9,5|9|10,9,5|10,5|9|10,110.094654,0.0,False
+packaging_logistics_dominant,10,5|10,5|9|10,10,5|10,5|9|10,0.0,0.0,True
+perfect_final_batch_adaptation,9,5|9,5|9|10,9,5|10,5|9|10,113.446808,0.0,False
+randomized_non_lattice_usage,9,5|9,5|9|10,9,5|10,5|9|10,109.627541,0.0,False
+zero_sku_complexity,9,5|9,5|9|10,9,5|10,5|9|10,106.504623,0.0,False

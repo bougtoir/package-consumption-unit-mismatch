@@ -1,0 +1,7 @@
+scenario,weight,annual_consumption_kg,usage_quanta_g,usage_probabilities,lattice_spacing_g,adaptation_probability,adaptation_min_ratio,freshness_threshold_days,handling_threshold_kg
+single_low,0.1905,32.0,150/225/300,0.5/0.25/0.25,75,0.55,0.7,30.0,4.0
+single_average,0.1905,53.4,150/225/300,0.35/0.3/0.35,75,0.5,0.7,30.0,4.0
+two_person_low,0.15475,74.8,225/300/375/450,0.25/0.4/0.2/0.15,75,0.45,0.7,30.0,6.0
+two_person_average,0.15475,106.8,225/300/375/450,0.1/0.35/0.2/0.35,75,0.45,0.7,30.0,6.0
+family_three,0.15475,160.2,300/450/600/750,0.1/0.35/0.35/0.2,150,0.35,0.75,30.0,8.0
+family_four,0.15475,213.6,450/600/750/900,0.1/0.3/0.35/0.25,150,0.3,0.75,30.0,8.0
