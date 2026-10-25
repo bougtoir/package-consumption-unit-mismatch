@@ -1,0 +1,4 @@
+sku_count,deterministic_optimal_portfolio,stochastic_optimal_portfolio,identities_match,deterministic_pick_cost_under_stochastic_jpy,stochastic_optimum_cost_jpy,decision_regret_jpy
+1,9,9,True,86272.47454554224,86272.47454554224,0.0
+2,5|10,5|10,True,85981.59180018431,85981.59180018431,0.0
+3,5|9|10,5|9|10,True,86124.82908590129,86124.82908590129,0.0

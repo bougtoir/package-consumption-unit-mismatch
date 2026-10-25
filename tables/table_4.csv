@@ -1,0 +1,11 @@
+regime,modification_from_baseline
+baseline,anchor calibration
+full_carry_no_spoilage,spoilage hazard multiplier = 0
+perfect_final_batch_adaptation,adaptation probability = 1; adaptation min ratio = 0
+zero_sku_complexity,sku complexity multiplier = 0
+high_sku_complexity,sku complexity multiplier = 5
+packaging_logistics_dominant,packaging cost multiplier = 5; purchase event cost multiplier = 3
+consumer_inconvenience_dominant,adaptation cost multiplier = 8; handling cost multiplier = 3
+no_discrete_consumption_quantum,usage distribution = lognormal
+randomized_non_lattice_usage,usage distribution = gamma
+continuous_no_spoilage,usage distribution = lognormal; spoilage hazard multiplier = 0

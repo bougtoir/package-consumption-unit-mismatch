@@ -1,0 +1,11 @@
+regime,greedy_one_sku,greedy_two_sku,optimal_one_sku,optimal_two_sku,greedy_regret_at_2_jpy,nested_at_2
+baseline,9,5|9,9,5|10,106.5,False
+consumer_inconvenience_dominant,9,5|9,9,5|9,0.0,True
+continuous_no_spoilage,10,9|10,10,9|10,0.0,True
+full_carry_no_spoilage,10,9|10,10,9|10,0.0,True
+high_sku_complexity,9,5|9,9,5|10,106.5,False
+no_discrete_consumption_quantum,9,5|9,9,5|10,110.1,False
+packaging_logistics_dominant,10,5|10,10,5|10,0.0,True
+perfect_final_batch_adaptation,9,5|9,9,5|10,113.4,False
+randomized_non_lattice_usage,9,5|9,9,5|10,109.6,False
+zero_sku_complexity,9,5|9,9,5|10,106.5,False
