@@ -1,0 +1,17 @@
+parameter,value,unit,source_type,source_id,interpretation
+natural_quantum_g,150.0,g uncooked rice,empirical anchor,maff_rice_go_mass,Mass convention for one go; not a household-demand distribution
+freshness_threshold_days,30.0,days,scenario anchor,maff_rice_storage,Quality guide after milling; not direct evidence of discard
+national_annual_rice_supply_kg_per_person,53.4,kg/person-year,empirical anchor,maff_rice_consumption_per_capita,National supply-consumption anchor; not an event distribution
+one_person_household_share,0.381,fraction of private households,empirical anchor,statistics_japan_2025,2020 census aggregate used only to structure scenario weights
+purchase_event_jpy,120.0,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+packaging_fixed_g,8.0,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+packaging_surface_g_per_kg_two_thirds,9.0,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+packaging_material_jpy_per_kg,350.0,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+storage_jpy_per_kg_day,0.08,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+freshness_jpy_per_kg_day,0.6,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+handling_jpy_per_purchase_kg_squared,4.0,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+adaptation_jpy_per_event,10.0,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+unmet_demand_jpy_per_kg,1700.0,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+size_discount_fraction_per_log_kg,0.025,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+spoilage_hazard_per_day_after_threshold,0.003,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
+sku_complexity_jpy_per_household_year,180.0,scenario-specific,transparent scenario assumption,none,Not presented as observed empirical data
