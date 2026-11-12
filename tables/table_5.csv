@@ -1,0 +1,6 @@
+control,package_kg,generalized_cost_jpy,physical_discard_kg,purchases,mean_age_at_consumption_days,packaging_mass_kg
+Discrete + spoilage,9.0,86272.475,0.755,11.432,23.137,0.537
+Lognormal + spoilage,9.0,86381.569,0.755,11.46,23.164,0.538
+Gamma + spoilage,9.0,86405.425,0.754,11.453,23.173,0.538
+Discrete + no spoilage,9.0,85646.311,0.0,11.347,23.959,0.533
+Lognormal + no spoilage,9.0,85759.248,0.0,11.366,24.081,0.534

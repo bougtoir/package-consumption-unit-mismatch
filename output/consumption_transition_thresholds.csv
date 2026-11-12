@@ -1,0 +1,7 @@
+outcome,lower_multiplier,upper_multiplier,from_portfolio,to_portfolio
+best_one_sku_portfolio,0.5,0.6,5,9
+best_one_sku_portfolio,1.1,1.2,9,10
+best_two_sku_portfolio,0.6,0.7,4.5|10,5|10
+best_three_sku_portfolio,0.7,0.8,3|5|10,4.5|9|10
+best_three_sku_portfolio,0.8,0.9,4.5|9|10,5|9|10
+global_optimal_portfolio,0.6,0.7,4.5|10,5|10

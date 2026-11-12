@@ -1,0 +1,3 @@
+from_sku_count,to_sku_count,best_from_portfolio,best_to_portfolio,from_consumer_cost_jpy,to_consumer_cost_jpy,break_even_complexity_jpy_per_added_sku,globally_optimal_portfolios_nested
+1,2,9,5|10,86272.475,85801.592,470.883,False
+2,3,5|10,5|9|10,85801.592,85764.829,36.763,True
