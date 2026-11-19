@@ -1,0 +1,17 @@
+pcum_input_or_quantity,class,evidence_ids,available_value_or_constraint,external_bound_for_target,phase_a_use
+rice.benchmark_market_portfolio_kg,A,mino / yone2 / yone5 / yone10 / ara10 / receipt,2・5・10 kgの単袋表示を確認。米山米の1 kg専用包装も確認,観測した選択肢に限定。全流通の範囲ではない,比較集合の入力
+capacity_specific_checkout_price,B,yone2 / yone5 / yone10 / yamato2 / yamato5 / ara5 / ara10,税・送料の条件付き商品表示価格,成立取引・長期価格の範囲なし,根拠表のみ
+households.annual_consumption_kg,B,komenet / maff-rice,全国モニター月次の精米在庫収支による使用の代理,世帯型別の絶対摂取量や上限下限なし,正典の世帯設定で比較。再較正なし
+households.usage_g / usage_probability,C,maff-rice / komenet,食事頻度や精米の平均利用とは単位が異なる,同じ袋の調理バッチ重量・日間分布は無し,正典の分布と共通乱数
+event_interval_gamma / purchase_trigger,C,receipt / komenet-method,購買の存在や月次入手は観測。購入頻度を同一世帯・容量別に特定できず,購入間隔・残量時の買い足し確率の外部境界なし,正典のガンマ使用イベントと不足時購入
+month_end_stock,A,komenet,2026-09の自己申告在庫のモニター平均,観測概念の集計のみ。個票・期をまたぐ開封状態の境界なし,在庫と退出を区別する確認。モデル初期状態に代入しない
+opened_carry_over / opening_and_storage_duration_joint,D,komenet / panasonic / tokushima,月末総在庫と食べ切る自己申告期間はある,開封時点・容器移替え・ロット年齢別の繰越なし,繰越が許される比較設計
+households.freshness_threshold_days,B,maff-storage / rice-shelf / storage-study,助言・官能劣化と保管温度,実際の退出が始まる日齢の外部範囲なし,品質の代理資料に限る。退出閾値に代入しない
+costs.spoilage_hazard_per_day_after_threshold / spoilage_hazard_multiplier,D,setagaya / sendai / phil / fao / kyoto,直接廃棄の混合区分、炊飯後の観測、国外質問票,乾燥精米の購入量に対する退出割合・保管日齢ハザードともに無し。数学上の0以上のみ,ゼロ対照と損益分岐式。正値は校正しない
+dry_rice_exit_mass / reasons / competing_removals,D,setagaya / sendai / tokushima / estat-table,自治体試料の米混合区分と調理後の廃棄。食品全体の世帯規模別集計,世帯別の未炊飯米の量・理由・贈与などを同じ分母で分離できない,食段階と移転を分離。食品全体や炊飯後から代入なし
+packaging_mass_kg for heiko_clear,B,heiko-all / heiko5 / heiko10,資料公称値は袋型式別に観測。2 kgは取扱終了資料,HEIKO条件の公称値の差のみ。ロットばらつき・精米商品の上下限無し,容量別の代理入力。2 kgの単一値は点参照
+retail_packaging_tare / material by SKU,D,yone2 / yone5 / yone10 / ara10 / marutaka2 / paperbag,精米商品の同定された空袋重量なし。別製品に紙・ポリの包装は存在,精米商品に割り当てられる観測上下限無し,実商品の包装kgを空欄で保持し代理と分離
+adaptation_probability / adaptation_min_ratio,C,panasonic / tokushima,購入後の消費期間・食品使用の記述はある。残量でバッチを変える確率は無し,外部境界なし,適応を無効化して消費サービスを一致
+households.handling_threshold_kg / portfolio_choice,C,receipt,容量の購買例のみ。世帯別配分と支払意思は未同定,市場シェアや容量変更時の選択確率なし,正典の取扱閾値を説明用の割当規則に利用
+households.scenario_weight / representative_shares,C,komenet / estat-table,世帯構成の集計はあるが容量選択や退出への結合なし,実売シェア・世帯別の需要と退出の同時分布なし,各世帯型を別々に表示し無加重
+costs.packaging_fixed_g / packaging_surface_g_per_kg_two_thirds,C,heiko-all / toyorice / cfp,複数の別設計の袋仕様。面積の質量換算や正典式の校正根拠なし,実売商品の質量曲線の外部範囲無し,正典の包装質量出力を採用せず袋数×公称代理重量

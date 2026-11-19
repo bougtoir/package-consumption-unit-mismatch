@@ -1,0 +1,12 @@
+source_id,package_family,sku,rice_capacity_kg,material,width_mm,length_mm,film_thickness_mm,listed_g_per_bag,source_mass_field,evidence_type,availability,sku_link_to_rice,notes,source_url,checked_on_jst
+heiko-all,heiko_clear,89195197,1,LDPE,170,280,0.06,5.3,質量(g/枚),包装資材小売仕様,取扱終了,未確認,過去の空袋仕様。専用ギフト包装の代理にしない,https://www.monotaro.com/g/00999515/,2026-11-18
+heiko-all,heiko_clear,89195206,2,LDPE,230,340,0.06,8.6,質量(g/枚),包装資材小売仕様,取扱終了,未確認,過去の仕様に限る。2 kg現行袋の範囲としない,https://www.monotaro.com/g/00999515/,2026-11-18
+heiko-all,heiko_clear,89195215,5,LDPE,280,470,0.07,17,質量(g/枚),包装資材小売仕様,出荷表示,未確認,シモジマ006677832と材質・寸法・厚さが一致,https://www.monotaro.com/g/00999515/,2026-11-18
+heiko-all,heiko_clear,89195224,10,LDPE,340,570,0.09,32,質量(g/枚),包装資材小売仕様,出荷表示,未確認,シモジマ006677833と材質・寸法・厚さが一致,https://www.monotaro.com/g/00999515/,2026-11-18
+heiko5,heiko_clear,006677832,5,LDPE,280,470,0.07,16.95,リサイクル重量,包装資材メーカー直販仕様,掲載,未確認,同ページ859 gは50枚商品のパッケージ重量。個袋重量とは異なる。測定法非掲載,https://shimojima.jp/shop/g/g4901755402049/,2026-11-18
+heiko10,heiko_clear,006677833,10,LDPE,340,570,0.09,32.093,リサイクル重量,包装資材メーカー直販仕様,掲載,未確認,同ページ1643 gは50枚商品のパッケージ重量。個袋重量とは異なる。測定法非掲載,https://shimojima.jp/shop/g/g4901755402056/,2026-11-18
+marutaka2,marutaka_clear,P04003,2,ポリ,220,340,,,未掲載,別メーカーの袋仕様,直送表示,未確認,パンチ穴付き。樹脂グレード・厚さ・単袋重量不明,https://shimojima.jp/shop/g/g4525241020175/,2026-11-18
+morofuji,custom_film,,,LLDPE,,,,,未掲載,メーカーの製造例,受注製造,未確認,別設計・材質。個別商品へ割当不可,https://morofuji.co.jp/product/ricebag/,2026-11-18
+paperbag,paper_barrier,魚沼産コシヒカリ,,紙バリア材を含む,,,,,未掲載,素材メーカー発表,2026-04-30採用公表,当該商品名のみ,フィルムの代理値を一律適用できない実例,https://www.nipponpapergroup.com/news/2026/news260430110000.html,2026-11-18
+toyorice,toyorice,金芽米ベストセレクト,2,非開示,240,290,,,未掲載,米メーカー表示,公表例,当該商品名のみ,外寸の比較を公表。空袋の重量や樹脂グレードは確定不可,https://www.toyo-rice.jp/about/csr/ecopack/,2026-11-18
+cfp,lca_case,滋賀県産こしひかり,4,プラスチック,,,,,個別値未掲載,一次研究のLCAインベントリ,2010年公表,旧事例のみ,包装投入量を調査した事例。参照箇所では比較に使えるサイズ別質量は得られない,https://www.jstage.jst.go.jp/article/lca/6/3/6_229/_pdf/-char/en,2026-11-18

@@ -1,0 +1,18 @@
+parameter,configured_value,unit,evidence_class,source_id,model_role,limitation
+natural consumption quantum,150,g uncooked rice,empirically anchored,maff_rice_go_mass,reference lattice unit,"A mass convention, not an event-probability estimate."
+annual consumption,32.0–213.6,kg/scenario-year,empirically anchored,maff_rice_consumption_per_capita,scenario event-rate calibration,53.4 kg/person-year anchors scenarios; class values are not estimated household-segment means.
+household composition weights,0.15475–0.1905,scenario weight,scenario assumption,statistics_japan_2025,design-scenario aggregation,Only the one-person share is empirically anchored; the six weights are not fitted population weights.
+freshness threshold,30,days,empirically anchored,maff_rice_storage,start of aging and spoilage exposure,"Storage guidance anchors a scenario threshold, not a measured discard boundary."
+usage-event size probabilities,six discrete distributions,probability,unidentified,none,lattice demand process,No household diary or scanner data were fitted.
+event interarrival distribution,Gamma shape 4,distribution,scenario assumption,none,stochastic timing,Mean is calibrated; shape is not empirically estimated.
+adaptation behavior,probability 0.30–0.55; ratio 0.70–0.75,probability and fraction,unidentified,none,final-batch adjustment and backlog,Behavioral response is a transparent scenario input.
+spoilage hazard,0.003,per day after threshold,unidentified,none,inventory exit,No rice-household hazard was estimated.
+purchase-event cost,120,JPY/event,scenario assumption,none,shopping and ordering burden,Break-even analysis varies this coefficient.
+packaging mass function,8 + 9 P^(2/3),g/package,scenario assumption,none,package-material intensity,No manufacturer bill of materials was available.
+packaging material cost,350,JPY/kg packaging,unidentified,none,packaging cost,No procurement data were available.
+storage cost,0.08,JPY/kg-day,unidentified,none,inventory carrying cost,No household shadow-price estimate was available.
+freshness cost,0.6,JPY/kg-day beyond threshold,unidentified,none,quality loss,No willingness-to-pay estimate was available.
+handling cost,4,JPY/purchase-kg²,unidentified,none,large-package inconvenience,No ergonomics or labor-cost estimate was available.
+size discount,0.025,fraction per log kg,scenario assumption,none,price–size relationship,No retail price panel was fitted.
+unmet-demand penalty,1700,JPY/kg,scenario assumption,none,service-loss penalty,No revealed or stated preference estimate was available.
+SKU complexity,180,JPY/household-year/additional SKU,unidentified,none,assortment and production complexity,No producer cost allocation was available; analytical break-even thresholds replace an empirical point claim.

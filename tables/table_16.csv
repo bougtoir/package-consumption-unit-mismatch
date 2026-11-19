@@ -1,0 +1,4 @@
+sku_count,deterministic_optimal_portfolio,stochastic_optimal_portfolio,identities_match,decision_regret_jpy
+1,9,9,True,0.0
+2,5|10,5|10,True,0.0
+3,5|9|10,5|9|10,True,0.0

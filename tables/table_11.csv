@@ -1,0 +1,7 @@
+candidate_grid,candidate_count,sku_count,best_portfolio,system_cost_jpy,consumer_cost_jpy,physical_discard_kg,packaging_mass_kg
+coarse,10,1,9,86399.9,86399.9,0.753,0.537
+coarse,10,2,5|10,86111.1,85931.1,0.272,0.541
+coarse,10,3,5|9|10,86253.5,85893.5,0.225,0.544
+dense,38,1,9,86399.9,86399.9,0.753,0.537
+dense,38,2,5.25|10,86104.6,85924.6,0.295,0.538
+dense,38,3,5.25|8|10,86231.8,85871.8,0.209,0.544
